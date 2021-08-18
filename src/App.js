@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Counter from './Counter';
+import CounterHooks from './CounterHooks';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <h1>Counter</h1>
+    <Counter intialCount={0}/>
+    <h1>Counter Hooks</h1>
+    <CounterHooks  intialCount={0}/>
+    </>
+  )
 }
 
 export default App;
